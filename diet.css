@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #f3f3f3, #e2f1f8);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: rgba(135, 207, 235, 0.444);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(76, 105, 159, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+section {
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: slideUp 1s ease-in-out;
+}
+
+section h2 {
+    margin: 0 0 20px;
+    padding: 15px;
+    background-color:skyblue;
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    border-radius: 10px;
+}
+
+section figure {
+    text-align: center;
+    margin: 15px 0;
+}
+
+section figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+section table th, section table td {
+    padding: 15px;
+    text-align: left;
+}
+
+section table thead {
+    background-color:skyblue;
+    color: white;
+}
+
+section table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+section table tbody tr:hover {
+    background-color: #e0f7fa;
+}
+
+footer {
+    background-color:skyblue;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
